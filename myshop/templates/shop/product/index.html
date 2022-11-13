@@ -1,0 +1,727 @@
+{% extends "shop/basic.html" %}
+{%load static%}
+{% block content %}
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image:url({%static 'main/images/carusel-1.jpg'%});" data-stellar-background-ratio="0.5">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 text ftco-animate">
+            <h1 class="mb-4">AQUILA<span>Лучшие системы очистки воды в Казахстане</span></h1>
+            <h3 class="subheading">Весь наш товар сертифицирован и подлежит гарантийному сервису AQUILA</h3>
+            <p><a href="{% url 'shop:product_list'%} " class="btn btn-secondary px-4 py-3 mt-3">Перейти в каталог</a></p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url({%static 'main/images/carusel-3.jpg'%});">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 text ftco-animate">
+            <h1 class="mb-4">AQUILA <span>Мы позаботимся о вашей воде.</span></h1>
+            <h3 class="subheading">Мы предоставляем сервис на протяжении всего периода использования фильтров.</h3>
+            <p><a href="{% url 'shop:index' %}" class="btn btn-secondary px-4 py-3 mt-3">Перейти в каталог</a></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-services ftco-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-person-check" viewBox="0 0 16 16">
+  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+  <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+</svg>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Квалифицированные сотрудники</h3>
+                <p>Наши сотрудники являются лучшими во всем Казахстане. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-lightning" viewBox="0 0 16 16">
+  <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+</svg>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Быстрая установка</h3>
+                <p>От заказа до установки проходит не больше одного дня.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-cash-coin" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+</svg>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Низкие цены</h3>
+                <p>Мы предоставляем самые низкие цены в Алмате.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-24-hours"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Круглосуточный сервис</h3>
+                <p>Работыем 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url({%static 'main/images/about.jpg'%});">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5 ml-md-5">
+		          	<span class="subheading">О AQUILA</span>
+		            <h2 class="mb-4" style="font-size: 28px;">Мы являемся лидерами рынка</h2>
+	            </div>
+	          </div>
+	          <div class="pl-md-5 ml-md-5 mb-5">
+							<p>Компания основана в г.Алматы и сразу завоевала доверие у потребителей. Наш лозунг - высокое качество и доступная цена.</p>
+							<div class="row mt-5 pt-2">
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+										<div class="text">
+											<h3>Чистая вода</h3>
+											<p>После установки системы очистки воды вы сразу же увидите разницу в ее качестве.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+										<div class="text">
+											<h3>Тестирование</h3>
+											<p>Мы тестируем воду до и после, чтобы показавать вам разницу</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+										<div class="text">
+											<h3>										<div class="text">
+											<h3>Сервис</h3>
+</h3>
+											<p>На протяжении всего периода обслуживания мы будем предоставлять сервис по замене катриджей.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="services-2 d-flex">
+										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+										<div class="text">
+											<h3>Здоровье</h3>
+											<p>Вы сразу же почувствуете разницу в своем самочувствие.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-intro" style="background-image: url({%static 'main/images/bg_3.jpg'%});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2>Мы предоставляем бесплатную консультацию</h2>
+						<p class="mb-0">Мы поможем вам с выбором и ответим на все вопросы.</p>
+						<p></p>
+					</div>
+					<div class="col-md-3 d-flex align-items-center">
+						<p class="mb-0"><a href="{% url 'shop:fb'%}" class="btn btn-secondary px-4 py-3">Бесплатная консультация</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">товары</span>
+            <h2 class="mb-4">Магазина AQUILA</h2>
+            <p>Мы проедаем все сантехническое и газовое оборудование.</p>
+          </div>
+        </div>
+    		<div class="ftco-departments">
+					<div class="row">
+            <div class="col-md-12 nav-link-wrap">
+	            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Cистема очистки воды</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Газовые котлы</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Сантехническое оборудование</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Сменные фильтра</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Комплектующие</a>
+
+	            </div>
+	          </div>
+	          <div class="col-md-12 tab-wrap">
+
+	            <div class="tab-content bg-light p-4 p-md-5 ftco-animate" id="v-pills-tabContent">
+
+	              <div class="tab-pane py-2 fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url({%static 'main/images/index-1.jpg'%});"></div>
+	              		</div>
+	              		<div class="col-lg-8">
+	              			<h2>Система очистки воды AQUILA</h2>
+	              			<p>Система состоит из импортных комплектующих высочайшего качества.</p>
+											<div class="row mt-5 pt-2">
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+														<div class="text">
+															<h3>Чистейшая вода</h3>
+															<p>Разница в качестве воды будет видна с первого стакана.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+														<div class="text">
+															<h3>Тестирование</h3>
+															<p>Мы проведем анализ воды до и после, после чего вы сможете увидеть разницу.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+														<div class="text">
+															<h3>Гарантия</h3>
+															<p>Мы предоставляем гарантию на весь товар.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+														<div class="text">
+															<h3>Здоровье</h3>
+															<p>Мы состоим из жидкости, поэтому важно обращать внимание на то, что мы пьем.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+	              		</div>
+	              	</div>
+	              </div>
+
+	              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(https://hubert.ru/upload/iblock/b15/b5mc7fy06mb3ikj4d6enj13erp75tk83.jpg);"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Газовое оборудование</h2>
+	              			<p>Мы предоставляем оборудование на пропане и бутане.</p>
+											<div class="row mt-5 pt-2">
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+														<div class="text">
+															<h3>Чистейшая вода</h3>
+															<p>Разница в качестве воды будет видна с первого стакана.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+														<div class="text">
+															<h3>Тестирование</h3>
+															<p>Мы проведем анализ воды до и после, после чего вы сможете увидеть разницу.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+														<div class="text">
+															<h3>Гарантия</h3>
+															<p>Мы предоставляем гарантию на весь товар.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+														<div class="text">
+															<h3>Здоровье</h3>
+															<p>Мы состоим из жидкости, поэтому важно обращать внимание на то, что мы пьем.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+	              		</div>
+	              	</div>
+	              </div>
+	              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhkhl6VO3jUDharldithz40eRPavpMsSnImVJBSjdX3cLUBmU0ev74pNwppxiy-ruk3U&usqp=CAU);"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Сантехническое оборудование</h2>
+	              			<p>Мы продаем все сантехнически комплектующие.</p>
+											<div class="row mt-5 pt-2">
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+														<div class="text">
+															<h3>Чистейшая вода</h3>
+															<p>Разница в качестве воды будет видна с первого стакана.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+														<div class="text">
+															<h3>Тестирование</h3>
+															<p>Мы проведем анализ воды до и после, после чего вы сможете увидеть разницу.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+														<div class="text">
+															<h3>Гарантия</h3>
+															<p>Мы предоставляем гарантию на весь товар.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+														<div class="text">
+															<h3>Здоровье</h3>
+															<p>Мы состоим из жидкости, поэтому важно обращать внимание на то, что мы пьем.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+	              		</div>
+	              	</div>
+	              </div>
+
+	              <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url({%static 'main/images/index-4.jpg'%});"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Сменные фильтра</h2>
+	              			<p>Мы предоставляем кувшинные фильтра для воды.</p>
+											<div class="row mt-5 pt-2">
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+														<div class="text">
+															<h3>Чистейшая вода</h3>
+															<p>Разница в качестве воды будет видна с первого стакана.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+														<div class="text">
+															<h3>Тестирование</h3>
+															<p>Мы проведем анализ воды до и после, после чего вы сможете увидеть разницу.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+														<div class="text">
+															<h3>Гарантия</h3>
+															<p>Мы предоставляем гарантию на весь товар.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+														<div class="text">
+															<h3>Здоровье</h3>
+															<p>Мы состоим из жидкости, поэтому важно обращать внимание на то, что мы пьем.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+	              		</div>
+	              	</div>
+	              </div>
+
+	              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
+	              	<div class="row departments">
+	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+	              			<div class="img d-flex align-self-stretch" style="background-image: url({%static 'main/images/index-5.jpg'%})"></div>
+	              		</div>
+	              		<div class="col-md-8">
+	              			<h2>Все продаем</h2>
+	              			<p>Тут я устал придумывать.</p>
+											<div class="row mt-5 pt-2">
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+														<div class="text">
+															<h3>Чистейшая вода</h3>
+															<p>Разница в качестве воды будет видна с первого стакана.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+														<div class="text">
+															<h3>Тестирование</h3>
+															<p>Мы проведем анализ воды до и после, после чего вы сможете увидеть разницу.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+														<div class="text">
+															<h3>Гарантия</h3>
+															<p>Мы предоставляем гарантию на весь товар.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="services-2 d-flex">
+														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+														<div class="text">
+															<h3>Здоровье</h3>
+															<p>Мы состоим из жидкости, поэтому важно обращать внимание на то, что мы пьем.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+	              		</div>
+	              	</div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Наши</span>
+            <h2 class="mb-4">Комплексные решения AQUILA</h2>
+            <p></p>
+          </div>
+        </div>
+    		<div class="row">
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">AQUILA Basic</h3>
+	        			<p><span class="price">&#8376; 49990</span> <span class="per"></span></p>
+	        		</div>
+        			<ul>
+        				<li>Насос: нет</li>
+								<li>Ступеней очистки : 5</li>
+								<li>Давление: 5 бар</li>
+								<li>Наличие крана: нет</li>
+								<li>Кайф: нет</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Купить</a></p>
+        		</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">AQUILA Classic</h3>
+	        			<p><span class="price">&#8376; 49990</span> <span class="per"></span></p>
+	        		</div>
+        			<ul>
+        				<li>Насос: нет</li>
+								<li>Ступеней очистки : 5</li>
+								<li>Давление: 5 бар</li>
+								<li>Наличие крана: нет</li>
+								<li>Кайф: нет</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Купить</a></p>
+        		</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">AQUILA Ultimate</h3>
+	        			<p><span class="price">&#8376; 49990</span> <span class="per"></span></p>
+	        		</div>
+        			<ul>
+        				<li>Насос: нет</li>
+								<li>Ступеней очистки : 5</li>
+								<li>Давление: 5 бар</li>
+								<li>Наличие крана: нет</li>
+								<li>Кайф: нет</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Купить</a></p>
+        		</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">AQUILA MAX</h3>
+	        			<p><span class="price">&#8376; 49990</span> <span class="per"></span></p>
+	        		</div>
+        			<ul>
+        				<li>Насос: нет</li>
+								<li>Ступеней очистки : 5</li>
+								<li>Давление: 5 бар</li>
+								<li>Наличие крана: нет</li>
+								<li>Кайф: нет</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Купить</a></p>
+        		</div>
+        	</div>
+        </div>
+    	</div>
+    </section>
+
+		<section class="ftco-section ftco-no-pt">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">команда</span>
+            <h2 class="mb-4">AQUILA</h2>
+            <p>Мы работаем для того, чтобы вы получали товары и услуги высочайшего качества</p>
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(https://i.postimg.cc/d3VrRHVy/image.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Татаринов Евгений</h3>
+								<span class="position mb-2">Руководитель отдела обслуживание</span>
+								<div class="faded">
+									<p>Я красивый и вас красиво обслужу</p>
+
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(https://i.postimg.cc/gcyG3zC8/image.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Анциферов Николай</h3>
+								<span class="position mb-2">Руководитель отдела по работе с клиентами</span>
+								<div class="faded">
+									<p>Решаю все вопросы с клиентами</p>
+
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(https://i.postimg.cc/zD79Jymt/image.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Чумаков Евгений</h3>
+								<span class="position mb-2">Руководитель отдела маркетинга</span>
+								<div class="faded">
+									<p>Продаю все что можно и все что нельзя.</p>
+
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(https://i.postimg.cc/cHm54bzg/image.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Тураш Евгений</h3>
+								<span class="position mb-2">Руководит руководителями</span>
+								<div class="faded">
+									<p>Тони Старк своего дела.</p>
+
+	              </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">отзывы</span>
+            <h2 class="mb-4">О товарах AQUILA</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-8">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url({%static 'main/images/person_1.jpg'%})">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Давно купила кувшин Барьер он уже сломался и купила новый т.к. очень нравится какая после него вода. Первые 2-3 порции сливаю и набираю воду. Раньше , да и сейчас когда очень хочется пить, пила из под крана. После очень болел живот. Но когда начила фильтровать воду с помощью фильтров Барьер со здоровьем стало лучше.
+
+Вода очищается очень хорошо, нет накипи в чайнике, а если начинается появляться значит надо менять фильтр.
+
+Вкус воды улучшается и даже не кипяченная вода сразу после фильтра вкусная.
+
+Пользовалась разными фильтрами Барьер, но лучше всего мне понравилась кассета фильтрующая сменная Барьер Стандарт для обычной водопроводной воды. </p>
+                    <p class="name">Армен Иванов</p>
+                    <span class="position">г.Алматы</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url({%static 'main/images/person_2.jpg'%})">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Давно купила кувшин Барьер он уже сломался и купила новый т.к. очень нравится какая после него вода. Первые 2-3 порции сливаю и набираю воду. Раньше , да и сейчас когда очень хочется пить, пила из под крана. После очень болел живот. Но когда начила фильтровать воду с помощью фильтров Барьер со здоровьем стало лучше.
+
+Вода очищается очень хорошо, нет накипи в чайнике, а если начинается появляться значит надо менять фильтр.
+
+Вкус воды улучшается и даже не кипяченная вода сразу после фильтра вкусная.
+
+Пользовалась разными фильтрами Барьер, но лучше всего мне понравилась кассета фильтрующая сменная Барьер Стандарт для обычной водопроводной воды. </p>
+                    <p class="name">Армен Иванов</p>
+                    <span class="position">г.Алматы</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url({%static 'main/images/person_3.jpg'%})">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Давно купила кувшин Барьер он уже сломался и купила новый т.к. очень нравится какая после него вода. Первые 2-3 порции сливаю и набираю воду. Раньше , да и сейчас когда очень хочется пить, пила из под крана. После очень болел живот. Но когда начила фильтровать воду с помощью фильтров Барьер со здоровьем стало лучше.
+
+Вода очищается очень хорошо, нет накипи в чайнике, а если начинается появляться значит надо менять фильтр.
+
+Вкус воды улучшается и даже не кипяченная вода сразу после фильтра вкусная.
+
+Пользовалась разными фильтрами Барьер, но лучше всего мне понравилась кассета фильтрующая сменная Барьер Стандарт для обычной водопроводной воды. </p>
+                    <p class="name">Армен Иванов</p>
+                    <span class="position">г.Алматы</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url({%static 'main/images/person_4.jpg'%})">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Давно купила кувшин Барьер он уже сломался и купила новый т.к. очень нравится какая после него вода. Первые 2-3 порции сливаю и набираю воду. Раньше , да и сейчас когда очень хочется пить, пила из под крана. После очень болел живот. Но когда начила фильтровать воду с помощью фильтров Барьер со здоровьем стало лучше.
+
+Вода очищается очень хорошо, нет накипи в чайнике, а если начинается появляться значит надо менять фильтр.
+
+Вкус воды улучшается и даже не кипяченная вода сразу после фильтра вкусная.
+
+Пользовалась разными фильтрами Барьер, но лучше всего мне понравилась кассета фильтрующая сменная Барьер Стандарт для обычной водопроводной воды. </p>
+                    <p class="name">Армен Иванов</p>
+                    <span class="position">г.Алматы</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mr-4" style="background-image: url({%static 'main/images/person_1.jpg'%})">
+                  </div>
+                  <div class="text ml-2 bg-light">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>Давно купила кувшин Барьер он уже сломался и купила новый т.к. очень нравится какая после него вода. Первые 2-3 порции сливаю и набираю воду. Раньше , да и сейчас когда очень хочется пить, пила из под крана. После очень болел живот. Но когда начила фильтровать воду с помощью фильтров Барьер со здоровьем стало лучше.
+
+Вода очищается очень хорошо, нет накипи в чайнике, а если начинается появляться значит надо менять фильтр.
+
+Вкус воды улучшается и даже не кипяченная вода сразу после фильтра вкусная.
+
+Пользовалась разными фильтрами Барьер, но лучше всего мне понравилась кассета фильтрующая сменная Барьер Стандарт для обычной водопроводной воды. </p>
+                    <p class="name">Армен Иванов</p>
+                    <span class="position">г.Алматы</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+{%endblock%}

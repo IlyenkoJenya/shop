@@ -1,0 +1,186 @@
+{% extends "shop/basic1.html" %}
+{% load bootstrap4 %}
+{%load static%}
+
+{%block content%}
+<style>
+	html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+	min-width: 320px;
+}
+
+img {
+	max-width: 500px;
+	height: 500px;
+}
+
+section {
+	padding: 50px 0;
+}
+
+a {
+	color: #111;
+}
+
+a:hover {
+	color: #555;
+}
+
+/* Header */
+.navbar-light .navbar-nav .nav-link {
+	color: #111;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.top-menu li a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #111;
+	height: 1px;
+	transition: all .3s;
+	transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+	transform: scale(1);
+}
+
+.modal-body img {
+	max-width: 100px;
+}
+/* Header */
+
+/* Carousel */
+.my-carousel {
+	padding: 0;
+}
+
+.my-carousel .carousel-item {
+	display: flex;
+	max-height: 500px;
+}
+
+.my-carousel .carousel-item img {
+	object-fit: cover;
+}
+/* Carousel */
+
+/* Product card */
+.product-card {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+	transition: all .3s;
+}
+
+.product-card:hover {
+	box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.product-thumb a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	padding: 20px;
+}
+
+.product-thumb img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-details {
+	padding: 20px;
+}
+
+.product-details h4 a {
+	font-weight: 500;
+	display: block;
+	height: 60px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.product-details p {
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #999;
+	height: 44px;
+	overflow: hidden;
+}
+
+.product-bottom-details {
+	overflow: hidden;
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+}
+
+.product-price {
+	font-size: 18px;
+	color: #ee6e73;
+	font-weight: 600;
+}
+
+.product-price small {
+	color: #ccc;
+	font-weight: 400;
+	text-decoration: line-through;
+	margin-right: 5px;
+}
+
+.product-links a {
+	font-size: 20px;
+	margin-left: 10px;
+}
+</style>
+
+
+<div class="container">
+			<div class="row">
+				{%for bb in bbs%}
+				<div class="col-lg-4 col-sm-6 mb-3">
+					{%url 'main:detail' rubric_pk=rubric.pk pk=bb.pk as url%}
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="{{url}}{{all}}"><img src="{% thumbnail bb.image 'default'%}" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="{{url}}{{all}}">{{bb.title}}</a></h4>
+							<p>{{bb.content}}</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>&#8376;551112</small> &#8376;{{bb.price}}
+								</div>
+								<div class="product-links">
+									<a href="{{url}}{{all}}"><i class="fas fa-shopping-cart"></i></a>
+									<a href="{{url}}{{all}}"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+
+
+
+			</div>
+		</div>
+
+
+
+{%endblock%}

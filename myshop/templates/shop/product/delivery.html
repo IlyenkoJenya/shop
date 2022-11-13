@@ -1,0 +1,213 @@
+{% extends "shop/basic.html" %}
+{% load bootstrap4 %}
+{%load static%}
+
+{%block content%}
+<style>
+
+@media (min-width: 1200px)
+.container {
+    max-width: 1230px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 992px)
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+@media (min-width: 768px)
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-start {
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
+}
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.char_icon {
+    margin-right: 24px;
+}
+.char_content {
+    transform: translate(-1px, 3px);
+}
+.char_title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+.characteristics {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.char_item {
+    /* width: 100%; */
+    height: 100px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
+    border: solid 1px #08A493;
+    padding-left: 36px;
+}
+
+</style>
+
+
+
+
+<div class="hero-wrap hero-bread" style="background-image:url({%static 'main/images/fon.jpg'%})">
+<div class="container">
+<div class="row no-gutters slider-text align-items-center justify-content-center">
+<div class="col-md-9 ftco-animate text-center fadeInUp ftco-animated">
+<h1 class="mb-0 bread">Доставка</h1>
+<p class="breadcrumbs"> <span>все о способах доставки магазина AQUILA</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="characteristics">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-3 col-md-6 char_col">
+<div class="char_item d-flex flex-row align-items-center justify-content-start">
+<div class="char_icon"><img src="https://static.insales-cdn.com/files/1/2448/3795344/original/shipped.png" alt="" data-pagespeed-url-hash="2748731736" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="char_content">
+<div class="char_title"><strong>Бесплатная доставка</strong></div>
+<div class="char_subtitle">от 50000&#x20b8;</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 char_col">
+<div class="char_item d-flex flex-row align-items-center justify-content-start">
+<div class="char_icon"><img src="https://static.insales-cdn.com/files/1/2580/3615252/original/icon_22.png" alt="" data-pagespeed-url-hash="3043231657" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="char_content">
+    <div class="char_title"><strong>Удобный заказ</strong></div>
+<div class="char_subtitle">со всех устройств</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 char_col">
+<div class="char_item d-flex flex-row align-items-center justify-content-start">
+<div class="char_icon"><img src="https://static.insales-cdn.com/files/1/2582/3615254/original/icon_33.png" alt="" data-pagespeed-url-hash="3337731578" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="char_content">
+<div class="char_title"><strong>100% подлинности</strong></div>
+<div class="char_subtitle">и качества товара</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 char_col">
+<div class="char_item d-flex flex-row align-items-center justify-content-start">
+<div class="char_icon"><img src="https://static.insales-cdn.com/files/1/2583/3615255/original/icon_44.png" alt="" data-pagespeed-url-hash="3632231499" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="char_content">
+<div class="char_title"><strong>Оплата</strong></div>
+<div class="char_subtitle">любым удобным способом</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="container">
+
+
+
+    <ul class="b-delivery-info__list">
+<li class="b-delivery-info__item"><strong><span class="b-sp block-21">Пункты самовывоза</span></strong>
+<p><span>Для предотвращения недоразумений при желании забрать свою покупку самостоятельно необходимо подтверждение менеджера салона, т.е. позвонить в офис перед выездом.</span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Доставка курьером по г.Алматы&nbsp;</span><span class="b-delivery-info__free" style="color: #ff0000;">Бесплатно при условии</span></strong>
+<p><span class="b-sp">Стоимость доставки<span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;"><strong> 1'500 тг.</strong></span></span> Заказ на сумму <span style="text-decoration: underline;"><strong>свыше 20'000 тг</strong>.</span> и весом<span style="text-decoration: underline;"><strong> до 15 кг.</strong></span> доставляется <span style="text-decoration: underline;"><strong>БЕСПЛАТНО</strong> </span>и только </span><span>по г.Алматы в пределах квадрата улиц: Аль-Фараби/Яссауи/Рыскулова/Восточная объездная. Стоимость доставки товара свыше 15 кг. и/или за пределы данного квадрата оговаривается отдельно.</span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Доставка мастером в день монтажа бытового водоочистителя </span><span class="b-delivery-info__free" style="color: #ff0000;">Бесплатно</span></strong><br>
+<p><span>В случае приобретения вместе с водоочистителем его монтажа, предусмотрена БЕСПЛАТНАЯ доставка данного водоочистителя со склада или офиса в черте города Алматы.</span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Доставка почтой Kazpost (с комиссией 4%) с предоплатой за транспортировку</span></strong>
+<p><span class="b-sp">Стоимость доставки от 2'500 тг. </span><span>Доставка осуществляется в течение 3-х дней после заказа. В зависимости он габаритов и веса цена может колебаться от 1'000 до 10'000 тг. За транспортировку необходимо оплатить заранее!!! За услуги отправки денег, KAZPOST берёт комиссию в размере 4%!!!</span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Логистическа фирма CDEK</span></strong>
+<p><span class="b-sp">Стоимость доставки от 2'000 Тг.</span><span>Данная компания имеет во многих больших городах Казахстана свои точки выдачи, а так же доставку до дверей. В некоторых городах есть услуга наложенного платежа (3% комиссия). Стоимость доставки дифференцированная от 1'500 тг. до 20'000 тг. в зависимости от габаритов и массы товара. К сожалению на данный момент пункты приёма есть не во всех городаж Казахстана. Список городов можно посмотреть на <a rel="noopener noreferrer" href="http://cdek.kz/contacts/city-list.html" target="_blank"><strong>официальном сайте компании</strong></a>.<br></span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Транспортная компания АлемТАТ</span></strong>
+<p><span class="b-sp">Мы пользуемся услугами транспортной компании <a rel="noopener noreferrer" href="http://www.alemtat.kz/tariff-calc/" target="_blank"><strong>АлемТАТ</strong></a>. Стоимость доставки и сроки по Казахстану можно уточнить, либо у сотрудников фирмы, либо у менеджеров транспортной компании.</span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Транспортная компания Exline</span></strong>
+<p><span>Мы пользуемся услугами транспортной компании <a rel="noopener noreferrer" href="http://exline.kz/ru/calculations" target="_blank"><strong>Exline</strong></a>. Стоимость доставки и сроки по Казахстану можно уточнить, либо у сотрудников фирмы, либо у менеджеров транспортной компании.</span></p>
+</li>
+<li class="b-delivery-info__item"><strong><span class="b-sp">Транспортная компания Spark-Logistics (кроме Алматы)</span></strong>
+<p><span class="b-sp">Стоимость доставки от 2'500 тг. </span><span>Доставка только до крупных городов Казахстана (Уральск, Актау, Актобе, Атырау, Астана, Караганда, Кокчетав, Петропавловск, Шымкент, Тараз, Семей, Павлодар, Талдыкорган). Цена до 10 кг. физического или объёмного веса. При массе больше стоимость выше.</span></p>
+</li>
+</ul>
+<h4 class="b-delivery-info__title"><span>Регионы доставки:</span></h4>
+<p><span class="b-delivery-info__region">Казахстан:</span></p>
+<ul>
+<li>Акмолинская область</li>
+<li>Актюбинская область</li>
+<li>Алматинская область</li>
+<li>Алматы</li>
+<li>Нур-Султан</li>
+<li>Атырау</li>
+<li>Усть-Каменогорск</li>
+<li>Жамбылская область</li>
+<li>Уральск</li>
+<li>Караганда</li>
+<li>Костанай</li>
+<li>Кызылорда</li>
+<li>Актау</li>
+<li>Павлодар</li>
+<li>Петропавловск</li>
+<li>Шымкент</li>
+</ul>
+  </div>
+
+</div>
+      </div></div>
+{%endblock%}

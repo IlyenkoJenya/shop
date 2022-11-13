@@ -1,0 +1,235 @@
+header h1 {
+    background: url('bg.jpg') right / auto 100% no-repeat,
+    url('bg.jpg') left / auto 100% no-repeat;
+
+}
+
+.root {font-size: larger;
+}
+img.main-image {
+    width:3000px;
+}
+img.additional-image {
+    width:189px;
+}
+
+.text-logo {
+	color: #08A493;
+}
+
+/*---delivery---*/
+.section--content > .wrap {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.benefit_wrap.footer_benefit .benefits {
+    min-width: 23%;
+    justify-content: flex-start;
+}
+.benefits {
+    padding: 0.5rem 1rem;
+    border: 1px solid #08A493;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.benefit_wrap {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+.lg-grid-12 {
+    width: 100%;
+  }
+.lg-padded-inner-sides {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+.benefits img {
+    height: auto;
+    width: auto;
+    margin-right: 1rem;
+}
+/*
+------
+*/
+hero-wrap.hero-bread {
+    padding: 5em 0;
+}
+.hero-wrap, .img, .blog-img, .user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-wrap .slider-text {
+    color: black;
+    position: relative;
+}
+
+hero-wrap .slider-text .bread {
+    font-weight: 100;
+    color: #000000;
+    font-size: 40px;
+    font-family: "Lato", Arial, sans-serif;
+    letter-spacing: 5px;
+}
+.hero-wrap .slider-text .breadcrumbs {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    z-index: 99;
+}
+.hero-wrap.hero-bread {
+    padding: 2em 0;
+}
+
+/*
+----contact--*/
+.contact_title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact_title h2 {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.contact_title h2:before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #e5e5e5;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.contact_title p {
+    font-size: 14px;
+    color: #999999;
+    font-family: "Poppins", sans-serif;
+    line-height: 26px;
+    max-width: 540px;
+    margin: auto;
+}
+
+
+.contact_info {
+    width: 100%;
+    padding-top: 1px;
+}
+.contact_info_item {
+    width: calc((100% - 60px) / 3);
+    height: 100px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    padding-left: 32px;
+    padding-right: 15px;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-start {
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
+}
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.contact_info_image {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+.contact_info_image img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.contact_info_content {
+    padding-left: 17px;
+}
+.contact_info_title {
+    font-weight: 500;
+}
+.contact_info_text {
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+}
+
+/*
+---карта-----*/
+
+.map iframe {
+	width: 100%;         /* Укажите необходимую ширину в px, например width: 800px; адаптивность не пропадёт */
+    height: 400px;       /* Значение высоты может быть любым, адаптивность не пропадёт */
+}
+
+/* далее не обязательные параметры, если используете Bootstrap */
+.map {
+	width: 100%;
+	text-align: center;	 /* Выравниваем по центру, если задана фиксированная ширина */
+	margin: 0 auto;
+}
+
+
+/*
+---------каталог-------*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/*
+корзина */

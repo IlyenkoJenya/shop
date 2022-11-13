@@ -1,0 +1,74 @@
+{% extends "shop/basic.html" %}
+{% load bootstrap4 %}
+{%load static%}
+
+{%block content%}
+<div class="contact_title ftco-section">
+<h2>Контакты</h2>
+<p>Вы можете обратиться к нам любым удобным Вам способом 🐳</p>
+</div>
+
+<div class="contact_info">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 offset-lg-1">
+<div class="contact_info_container d-flex flex-lg-row flex-column justify-content-between align-items-between">
+
+<div class="contact_info_item d-flex flex-row align-items-center justify-content-start"> <a href="tel:+77077621602" class="text-dark">
+<div class="contact_info_image"><img src="data:image/webp;base64,UklGRuQAAABXRUJQVlA4TNcAAAAvEoAIEB8ikE3uv6yTGIchV9C2kZv7pL8HqX+DA0oDEIhAAAEexMcCACIAgRAiAEBUACAEAGIgAwi4gaCj417EgFho4AkAABOO3EhSpFpmmOVhxmVmzP+/akqq6x4j+j8B5EMaUozDajW3+flqtUeGFRFRt5/vERGlgFFrNJrKIK+0Go2ahhvkj88pkx5/mJB0CDgiA3BF5j/GEKmAV5JauEP+fF+2bGLHW/b8xZTYcrtC7AiwuSvuBUYHVO6FX5EZAxuu2qkTu0aC/TLvzOxlfocFBZBGBAA=" alt="" data-pagespeed-url-hash="2980390636" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="contact_info_content">
+<div class="contact_info_title"><a href="tel:+77077621602" class="text-dark">Телефон</a></div>
+<div class="contact_info_text"><a href="tel:+77077621602" class="text-dark">+7 (707) 762-16-02</a></div>
+</div>
+</div>
+
+
+<div class="contact_info_item d-flex flex-row align-items-center justify-content-start"> <a href="https://telegram.me/nykolas33" class="text-dark"  >
+<div class="contact_info_image"><img src="{%static 'main/images/telegram_logo.png'%}" alt="telegram" data-pagespeed-url-hash="3274890557" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="contact_info_content">
+<div class="contact_info_title"><a href="https://telegram.me/nykolas33" class="text-dark"  >Telegram</a></div>
+</div>
+</div>
+
+
+
+<div class="contact_info_item d-flex flex-row align-items-center justify-content-start"><a href="https://wa.me/77077621602" class="text-dark"  >
+<div class="contact_info_image"><img src="{%static 'main/images/wa_logo.webp'%}"   alt="telegram" data-pagespeed-url-hash="3274890557" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
+<div class="contact_info_content">
+<div class="contact_info_title"><a href="https://wa.me/77077621602" class="text-dark"  >WhatsApp</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container mt-5"> <!-- если не нужно на всю ширину экрана, то замените container-fluid на container -->
+
+<div class="row">
+<div class="col"> <!-- в некоторых случаях и для bootstrap3 необходимо указать значения col-md-12 col-lg-6 и т.п. -->
+
+
+
+<div class="map"> <!-- значения смотрите в файле css/style.css -->
+
+<!-- Код карты от Яндекс - без параметров width="ххх" height="ххх" и frameborder="х" -->
+<div style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/162/almaty/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Алматы</a><a href="https://yandex.kz/maps/162/almaty/house/Y08Yfg5mQEIDQFppfX51cXVjYw==/?ll=76.896974%2C43.240907&utm_medium=mapframe&utm_source=maps&z=16.22" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Курмангазы, 164 — Яндекс Карты</a><iframe src="https://yandex.kz/map-widget/v1/-/CCUZN0qegC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div><!-- Конец код карты от Яндекс -->
+    <p class="text-left my-5"><strong>Юр.лицо: </strong> ИП АНЦИФЕРОВ</p>
+    <p class="text-left my-5"><strong>Адрес: </strong> г.Алматы, ул. Курмангазы 164</p>
+    <p class="text-left my-5"><strong>Телефон: </strong> +77077621602</p>
+    <p class="text-left my-5"><strong>Какая-то инфа: </strong> еще что=то тут</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+{%endblock%}
